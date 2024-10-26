@@ -11,14 +11,14 @@
     display: flex;
     flex-direction: column;
     flex-basis: 20px;
-   background-image: url(./group\ 7\ cit.jpg);
-   background-size: cover;
+    background-image: url(./group\ 7\ cit.jpg);
+    background-size: cover;
     color: rgba(250, 235, 215, 0.884);
     border-radius: 15px;
 
 }
 
-.nav{
+.nav-links{
     
     display:flex;
     flex-direction: column;
@@ -26,22 +26,16 @@
     text-transform: uppercase;
     text-decoration: none;
 }
-.nav a{
+.nav-links a{
     color: rgb(250, 235, 215);
     text-decoration: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     padding: 5px;
     
 }
-@media (min-width: 700px) {
-    .nav{
-        display: flex;
-        flex-direction: row;
 
-    }
-}
 .nav a:hover{
     color: rgb(185, 11, 147);
     background-color: aliceblue;
@@ -52,7 +46,7 @@
     color:#e4d9d9;
 }
 
-/* schedule */
+/* webnair */
 .fontend{
     width: 400px;
     display: flex;
@@ -77,9 +71,9 @@
 
 /* ticket section */
 .vticket{
-    width: 400px;
+    width: 350px;
     height: 300px;
-    background-color: rgb(90, 72, 37);
+    background-color: #2aafe2ff;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -96,9 +90,9 @@
 
 }
 .multi{
-    width: 400px;
+    width: 350px;
     height: 300px;
-    background-color: rgb(46, 90, 37);
+    background-color:#2ed8f9ff;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -112,9 +106,9 @@
     color: yellow;
 }
 .single{
-    width: 400px;
+    width: 350px;
     height: 300px;
-    background-color: rgb(146, 38, 119);
+    background-color: #67aaf9ff;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -125,7 +119,7 @@
 }
 .single a{
     text-decoration: none;
-    color: rgb(0, 195, 255);
+    color: rgb(218, 233, 3);
 }
 
 /* sponser */
@@ -134,31 +128,54 @@
     margin: 1.5rem;
     padding: 20px;
 }
+/* shedule */
+.event{
+    margin: 20px;
+    padding: 12px;
+    border: 2px solid #111;
+    display: block;
+
+}
+.venue{
+    margin: 20px;
+    border-radius: 7px;
+
+}
+
+
+
 
  /* footer */
  .footer{
     width: 300px;
     margin:2rem ;
     padding: 20px;
-    
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    border: 1px solid #111;
  }
 .contact{
-    width: 150px;
-    height: 120px;
-    border: 2px solid #0531f5;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #111;
+    
     
 }
-.social{
-    width: 150px;
-    height: 120px;
-    border: 2px solid #f5f105;
+.social-icons{
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #7af00c;
 }
 .news{
     width: 200px;
-    height: 80px;
-    border: 2px solid #05f511;
-
+    height: 100px;
+    border: 1px solid #10c5dd;
 }
+
+
+
+
 /* ticket page */
     .form{
         margin: 20px;
@@ -167,7 +184,7 @@
     }
     .form input{
         padding: 9px;
-        margin: 5px;
+        margin: 4px;
         border-radius: 10px;
         width: 10rem;
     }
@@ -177,56 +194,118 @@
         display: block;
         margin-top: 10px;
     }
+    .vticket{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    /* webinar */
+    .web{
+        border-radius: 20%;
+        margin: 20px;
+    }
 
-    /* footer icons */
-    .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
+
+
+    /* footer*/
+    .footer{
+        display: flex;
+        flex-direction:column ;
+
+    }
+
+
+
+
+ /* media quary// small screen */
+    @media (max-width:700px) {
+      .nav-links a{
+        color: rgb(250, 235, 215);
         text-decoration: none;
-        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 5px;
+        font-size: 20px;
+    
+
+      } 
+      .nav-links a:hover{
+        color: rgb(185, 11, 147);
+        background-color: aliceblue;
     }
-    .fa-facebook {
-        background: #3B5998;
-        color: white;
+    .venue{
+        width: 350px;
     }
-    .fa-linkedin {
-        background: #3B5998;
-        color: white;
-    }
-    .fa-twitter {
-        background: #55ACEE;
-        color: white;
-    }
-    .fa-google {
-        background: #e73124;
-        color: white;
-    }
-    .fa:hover {
-        opacity: 0.8;
+    .footer{
+        display: flex;
+        flex-direction: column;
     }
 
 
 
 
 
+}
 
 
 
-
-
-
-
-
-
-
- /* media quary */
+    /* big screen */
     @media (min-width:1200px) {
-    section{
+        section{
         display: flex;
         flex-direction: row;
-
     }
+    .head{
+        background-size:cover;
+        margin: 0;
+    }
+    .image{
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
     
- }
+    }
+    .nav-links {
+        color: rgb(250, 235, 215);
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 5px;
+        font-size: 20px;
+    
+
+      } 
+      .nav-links a:hover{
+        color:#2ed8f9ff;
+        background-color: aliceblue;
+    }
+
+    img{
+        width: 350px;
+        border-radius: 0;
+        margin: 10px;
+        display: block;
+    }
+    h3{
+        opacity: 0.0px;
+        color: azure;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: space-evenly;
+    }
+    .contact{
+        width: 300px;
+    }
+    .social-icons{
+        width: 300px;
+    }
+    .news{
+        width: 300px;
+    }
+
+}

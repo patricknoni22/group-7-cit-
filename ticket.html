@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>get Ticket</title>
+    <title>Get Ticket</title>
 </head>
 <body>
         <!-- head -->
         <div  class="head" >
             <span class="spandev">developers.conf</span>
-            <span class="nav">
-                <a href="webinar">webinar</a>
-                <a href="speaker">HOT TOPICS</a>
-                <a href="shedule">shedule</a>
-                <a href="ticket.html">Get Ticket</a>
+            <span class="nav-links">
+                <a href="index.html">Home page</a>
+                <a href="webinar.html">webinar</a>
+                <a href="speaker.html">HOT TOPICS</a>
+                <a href="shedule.html">shedule</a>
             </span>
             <h1>Global Biggest of jamstackt <i>Conf 2024
             </i></h1>
     
             <p>join more than 100 developers in futo, owerri . In a full day of inspiring keynote and new connection at the premier </p>
-          
     
             <span class="now">
                 <p><h3>20</h3>world-class speaker</p>
@@ -29,19 +28,20 @@
             </span>
         </div>
 
-
-        
+<!-- scirpt -->
+<script src="index.js"></script>        
     <!-- ticket section -->
     <section class="tick">
         <div class="vticket">
             <span> <h4>virtual</h4>
                 <p>remote via Zoom/Meet</p>
             </span>
-        <span class="tick">
+        <div class="tick">
             <h3>Free</h3>
             <p>/person</p>
-        </span>
-        <a href="ticket.html" class="vreg">REGISTER NOW</a>
+        </div>
+        
+        <a href="#bottom">REGISTER NOW</a>
     </div>
 
     <div class="multi">
@@ -57,8 +57,8 @@
         <p><input type="checkbox" name="ig" id="ig">VIP Front seat</p>
         <p><input type="checkbox" name="ig" id="ig">Semainar Recording Online & Offline </p>
         
-
-        <a href="ticket.html">REGISTER NOW</a>
+        <a href="#bottom">REGISTER NOW</a>
+    
     </div>
 
     <div class="single">
@@ -73,20 +73,23 @@
         <p><input type="checkbox" name="ig" id="ig"> join All Events Online & Offline </p>
         <p><input type="checkbox" name="ig" id="ig">coffee Break & lunch </p>
 
-        <a href="ticket.html">REGISTER NOW</a>
+        <a href="#bottom">REGISTER NOW</a>
     </div>
 
 
 </section>    
-<section class="form">
+<section class="form" id="bottom">
     <form action="">
         <input type="text" name="" placeholder="enter your name"><br>
         <input type="text" name="" placeholder="enter your surname"> <br>
         <input type="email" name="" placeholder=" enter your email"><br>
-        <span>male<input type="radio" name="gen" id="male"></span>
-        <span>female
-        <input type="radio" name="gen" id="female"></span><br>
-        <select>
+        <select name="" id="">
+            <option value="">choose your gender</option>
+            <option value="">male</option>
+            <option value="">female</option> 
+        </select><br><br>
+
+        <select >
             <option value="">choose seat row</option>
             <option value="">row 1</option>
             <option value="">row 2</option> 
@@ -99,8 +102,10 @@
             <option value="">row 9</option>
             <option value="">row 10</option>
         </select>
-        <button type="submit">submit</button>
+        <button id="submit" onclick="saveBtn()">Submit</button>
     </form>
 </section>   
+
+<p>&copy<span>2024    @ GROUP 7  IFT </span> </p>
 </body>
 </html>
