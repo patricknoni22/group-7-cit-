@@ -49,6 +49,10 @@
     font-size: xx-large;
     color:#fff4f4;
 }
+.word{
+    word-spacing: px;
+    line-height: 1.5rem;
+}
 
 /* topics */
 .fontend{
@@ -178,6 +182,14 @@
     height: 100px;
    
 }
+.four{
+    padding: 12px;
+    margin: 9px;
+    border: 2px solid #111;
+    display: block;
+    width: 250px;
+}
+
 /* copy footer */
 .copy{
     opacity: 0.7;
